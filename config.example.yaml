@@ -1,0 +1,5 @@
+wongnai_covid_cases: "https://static.wongnai.com/devinterview/covid-cases.json"
+cors:
+  - 127.0.0.1
+environment: 0 # 0: development, 1: production
+port: 8081
