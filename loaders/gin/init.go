@@ -13,9 +13,6 @@ func Init() {
 	// * Log
 	logs.Info("Starting server ...")
 
-	// * Cors
-	gonic.Use(corsConfig())
-
 	// * Trusted Proxies
 	gonic.SetTrustedProxies(config.C.Cors)
 

@@ -13,7 +13,7 @@ func NewCovidCaseRepositoryMock() covidCaseRepositoryMock {
 	covidCasesMock := map[string]interface{}{
 		"Data": []map[string]interface{}{
 			{
-				"ConfirmDate":    "2021-06-02",
+				"ConfirmDate":    "2021-05-03",
 				"No":             nil,
 				"Age":            34,
 				"Gender":         nil,
@@ -67,6 +67,34 @@ func NewCovidCaseRepositoryMock() covidCaseRepositoryMock {
 				"District":       nil,
 				"ProvinceEn":     nil,
 				"StatQuarantine": 6,
+			},
+			{
+				"ConfirmDate":    nil,
+				"No":             nil,
+				"Age":            8,
+				"Gender":         "ชาย",
+				"GenderEn":       "Male",
+				"Nation":         nil,
+				"NationEn":       "China",
+				"Province":       "Chai Nat",
+				"ProvinceId":     6,
+				"District":       nil,
+				"ProvinceEn":     "Chai Nat",
+				"StatQuarantine": 8,
+			},
+			{
+				"ConfirmDate":    "2021-05-02",
+				"No":             nil,
+				"Age":            73,
+				"Gender":         nil,
+				"GenderEn":       nil,
+				"Nation":         nil,
+				"NationEn":       "Thailand",
+				"Province":       "Ranong",
+				"ProvinceId":     50,
+				"District":       nil,
+				"ProvinceEn":     "Ranong",
+				"StatQuarantine": 7,
 			},
 		},
 	}

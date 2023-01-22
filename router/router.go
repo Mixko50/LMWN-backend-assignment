@@ -12,10 +12,6 @@ func Router(router gin.IRouter) {
 
 	// * Register service
 	covidCaseRepository := repository.NewCovidCaseRepositoryAPI(custom_http.HttpClient)
-
-	covidCaseRepositoryMock := repository.NewCovidCaseRepositoryMock()
-	_ = covidCaseRepositoryMock
-
 	covidCaseService := service.NewCovidCaseService(covidCaseRepository)
 	covidCaseHandler := handler.NewCovidCaseHandler(covidCaseService)
 

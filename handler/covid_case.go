@@ -20,6 +20,5 @@ func (h covidCaseHandler) GetAllCovidCases(c *gin.Context) {
 			"success": false,
 		})
 	}
-
 	c.JSON(200, covidCases)
 }

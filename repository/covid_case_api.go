@@ -27,6 +27,7 @@ func (r covidCasesRepositoryAPI) GetCovidCases() (*CovidCase, error) {
 	if err != nil {
 		return nil, err
 	}
+	defer req.Body.Close()
 
 	var covidCases = new(CovidCase)
 
